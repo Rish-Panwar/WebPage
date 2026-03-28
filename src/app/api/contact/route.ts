@@ -1,15 +1,22 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: Request) {
   try {
+    if (!process.env.RESEND_API_KEY) {
+      return NextResponse.json(
+        { error: "Missing API key" },
+        { status: 500 }
+      );
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
     const { name, email, message } = await req.json();
 
-    const data = await resend.emails.send({
+    await resend.emails.send({
       from: "Portfolio <onboarding@resend.dev>",
-      to: ["panwarrishabh00@gmail.com"], // your email
+      to: ["panwarrishabh00@gmail.com"],
       subject: `New message from ${name}`,
       html: `
         <h2>New Contact Message</h2>
@@ -20,7 +27,12 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ success: true });
+
   } catch (error) {
-    return NextResponse.json({ success: false }, { status: 500 });
+    console.error("EMAIL ERROR:", error);
+    return NextResponse.json(
+      { success: false },
+      { status: 500 }
+    );
   }
 }
