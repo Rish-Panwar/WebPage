@@ -29,27 +29,37 @@ export default function Navbar() {
         </div>
 
         {/* Nav Links */}
-        <div className="hidden md:flex items-center gap-2">
-          {navItems.map((item) => (
-            <button
-              key={item.link}
-              onClick={() => handleClick(item)}
-              className={`px-4 py-1.5 rounded-full text-base transition cursor-pointer ${active === item.name
-                ? "bg-white/10 text-white"
-                : "text-gray-400 hover:text-white hover:bg-white/5"
-                }`}
-            >
-              {item.name}
-            </button>
-          ))}
+        <div className="hidden md:flex items-center gap-2 flex-1 justify-center">
+          {navItems
+            .filter((item) => item.name !== "Contact")
+            .map((item) => (
+              <button
+                key={item.link}
+                onClick={() => handleClick(item)}
+                className={`px-4 py-1.5 rounded-full text-base transition cursor-pointer ${active === item.name
+                  ? "bg-white/10 text-white"
+                  : "text-gray-400 hover:text-white hover:bg-white/5"
+                  }`}
+              >
+                {item.name}
+              </button>
+            ))}
         </div>
-
-        {/* CTA */}
-        <Link href="#contact">
-          <button className=" flex items-center bg-gradient-to-r from-[#CC66DA] to-[#6A42C2] cursor-pointer text-white font-bold px-5 py-2 rounded-full text-sm hover:bg-gray-200 transition">
-            Contact <PersonStanding className="ml-2" size={18} />
-          </button>
-        </Link>
+        {/* Contact Button */}
+        <div className="hidden md:flex">
+          {navItems
+            .filter((item) => item.name === "Contact")
+            .map((item) => (
+              <button
+                key={item.link}
+                onClick={() => handleClick(item)}
+                className="flex items-center bg-gradient-to-r from-[#CC66DA] to-[#6A42C2] text-white font-bold px-5 py-2 rounded-full text-sm hover:opacity-90 transition cursor-pointer"
+              >
+                {item.name}
+                <PersonStanding className="ml-2" size={18} />
+              </button>
+            ))}
+        </div>
       </div>
     </div>
   );
