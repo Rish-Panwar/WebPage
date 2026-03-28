@@ -1,55 +1,116 @@
-# 🌐 Personal Portfolio — Rishabh Panwar
+# 🚀 Rishabh Panwar — Developer Portfolio
 
-A modern, animated, and performance-focused developer portfolio built using **Next.js 16**, **React Three Fiber**, **Three.js**, **Three-Globe**, **Aceternity UI**, and **Tailwind CSS**.  
-This website showcases my projects, skills, experience, and includes an interactive 3D globe with real-time animations.
-
----
-
-## 🚀 Tech Stack
-
-### **Frontend**
-- Next.js 16 (App Router)
-- React 18.2
-- TypeScript
-- Tailwind CSS
-- Aceternity UI Components
-- Motion (Animations)
-- Lucide Icons / Tabler Icons
-
-### **3D / Graphics**
-- React Three Fiber (R3F)
-- Three.js  
-- Three-Globe  
-- Drei Helpers (OrbitControls, CameraRig, etc.)
+A modern, high-performance portfolio showcasing my work as a **Full Stack Web Developer**, focused on building **interactive, scalable, and visually engaging web experiences**.
 
 ---
 
-## 🌟 Features
+## 🌐 Live Demo
 
-### 🔥 **Interactive 3D Globe**
-- Animated arcs between countries  
-- Atmospheric glow  
-- Dynamic rings & points  
-- Auto-rotating camera  
-- Fully optimized for performance  
+👉 https://your-portfolio-link.vercel.app
 
-### 🎨 **Modern UI & Animations**
-- Aceternity UI Bento Grid  
-- Animated hero section  
-- Smooth transitions with Motion  
-- Gradient backgrounds  
-- Minimal and clean design  
+---
 
-### 📁 **Projects Showcase**
-- Dynamic project cards  
-- Tech stack icons  
-- GitHub/Live links  
+## ✨ Highlights
 
-### 💬 **Testimonials Section**
-- Auto-animated testimonial cards  
-- Responsive layout  
+* ⚡ Smooth, animated UI with modern design patterns
+* 🎯 Fully responsive across all devices
+* 🧠 Focus on performance, UX, and clean architecture
+* 🎨 Glassmorphism + gradient-based premium UI
+* 📩 Functional contact system with modal interaction
 
-### 📱 **Fully Responsive**
-Works on:
-- Mobile  
-- T
+---
+
+## 🧰 Tech Stack
+
+### Frontend
+
+* **Next.js**
+* **React**
+* **TypeScript**
+* **Tailwind CSS**
+
+### Animations & UI
+
+* **Framer Motion**
+* Custom UI components
+
+### Backend / Services
+
+* API routes (Next.js)
+* Email integration
+
+### Deployment
+
+* **Vercel**
+
+---
+
+## 📁 Project Structure
+
+```
+/public        → Assets & images
+/src
+  /components  → Reusable UI components
+  /data        → Static data (projects, nav, etc.)
+  /app         → Pages & layout
+```
+
+---
+
+## 🚀 Features
+
+* 🧭 Responsive navigation with mobile menu
+* 🧩 Modular component-based architecture
+* 🎬 Scroll animations & micro-interactions
+* 💼 Project showcase with live previews
+* 📱 Mobile-first design approach
+
+---
+
+## ⚙️ Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/WebPage.git
+cd WebPage
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📬 Contact
+
+* 📧 Email: [panwarrishabh00@gmail.com](mailto:panwarrishabh00@gmail.com)
+* 💼 LinkedIn: https://www.linkedin.com/in/rishabh-panwar-1738-cj/
+* 🧑‍💻 GitHub: https://github.com/Rish-Panwar
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
+
+---
+
+## 🧠 Future Improvements
+
+* 🌙 Advanced theme customization
+* 📊 Analytics integration
+* 🧾 Case study pages for projects
+* ⚡ Performance optimizations
+
+---
+
+> Built with passion, precision, and a focus on creating impactful digital experiences.
